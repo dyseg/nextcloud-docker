@@ -31,7 +31,6 @@ RUN set -ex; \
         imagemagick-dev \
         libevent-dev \
         libjpeg-turbo-dev \
-        libmcrypt-dev \
         libmemcached-dev \
         libpng-dev \
         libwebp-dev \
@@ -53,7 +52,6 @@ RUN set -ex; \
         gmp \
         intl \
         ldap \
-        opcache \
         pcntl \
         pdo_mysql \
         pdo_pgsql \

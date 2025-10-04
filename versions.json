@@ -1,20 +1,46 @@
 {
-  "31": {
-    "branch": "31",
-    "version": "31.0.7",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2",
-    "ascUrl": "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2.asc",
+  "32": {
+    "branch": "32",
+    "version": "32.0.0",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-32.0.0.tar.bz2",
+    "ascUrl": "https://download.nextcloud.com/server/releases/nextcloud-32.0.0.tar.bz2.asc",
     "variants": {
       "apache": {
         "variant": "apache",
         "base": "debian",
-        "baseVersion": "bookworm",
+        "baseVersion": "trixie",
         "phpVersion": "8.3"
       },
       "fpm": {
         "variant": "fpm",
         "base": "debian",
-        "baseVersion": "bookworm",
+        "baseVersion": "trixie",
+        "phpVersion": "8.3"
+      },
+      "fpm-alpine": {
+        "variant": "fpm-alpine",
+        "base": "alpine",
+        "baseVersion": "3.22",
+        "phpVersion": "8.3"
+      }
+    }
+  },
+  "31": {
+    "branch": "31",
+    "version": "31.0.9",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-31.0.9.tar.bz2",
+    "ascUrl": "https://download.nextcloud.com/server/releases/nextcloud-31.0.9.tar.bz2.asc",
+    "variants": {
+      "apache": {
+        "variant": "apache",
+        "base": "debian",
+        "baseVersion": "trixie",
+        "phpVersion": "8.3"
+      },
+      "fpm": {
+        "variant": "fpm",
+        "base": "debian",
+        "baseVersion": "trixie",
         "phpVersion": "8.3"
       },
       "fpm-alpine": {
@@ -27,20 +53,20 @@
   },
   "30": {
     "branch": "30",
-    "version": "30.0.13",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-30.0.13.tar.bz2",
-    "ascUrl": "https://download.nextcloud.com/server/releases/nextcloud-30.0.13.tar.bz2.asc",
+    "version": "30.0.16",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-30.0.16.tar.bz2",
+    "ascUrl": "https://download.nextcloud.com/server/releases/nextcloud-30.0.16.tar.bz2.asc",
     "variants": {
       "apache": {
         "variant": "apache",
         "base": "debian",
-        "baseVersion": "bookworm",
+        "baseVersion": "trixie",
         "phpVersion": "8.3"
       },
       "fpm": {
         "variant": "fpm",
         "base": "debian",
-        "baseVersion": "bookworm",
+        "baseVersion": "trixie",
         "phpVersion": "8.3"
       },
       "fpm-alpine": {
