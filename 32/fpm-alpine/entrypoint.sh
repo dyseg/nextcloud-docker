@@ -112,6 +112,17 @@ if expr "$1" : "apache" 1>/dev/null || [ "$1" = "php-fpm" ] || [ "${NEXTCLOUD_UP
         group="$gid"
     fi
 
+    if [ -n "$PAGID" ]; then
+        _origIFS="$IFS"
+        IFS=','
+        for AGID in $PAGID; do
+            AGID=$(echo "$AGID" | tr -d '[:space:]"')
+            getent group "ncgroup-$AGID" || addgroup -gid "$AGID" "ncgroup-$AGID"
+            usermod -a -G "ncgroup-$AGID" "$(id -nu $user)"
+        done
+        IFS="$_origIFS"
+    fi
+
     if [ -n "${REDIS_HOST+x}" ]; then
 
         echo "Configuring Redis as session handler"
