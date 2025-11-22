@@ -10,7 +10,9 @@ RUN set -ex; \
         bzip2 \
         libldap-common \
         libmagickcore-7.q16-10-extra \
+        mc \
         rsync \
+        vim \
     ; \
     apt-get dist-clean; \
     \
