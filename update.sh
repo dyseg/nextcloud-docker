@@ -2,7 +2,7 @@
 set -eo pipefail
 
 declare -A alpine_version=(
-	[default]='3.22'
+	[default]='3.23'
 )
 
 declare -A debian_version=(
@@ -107,8 +107,8 @@ function create_variant() {
 	debianVersion=${debian_version[$version]-${debian_version[default]}}
 	phpVersion=${php_version[$version]-${php_version[default]}}
 	crontabInt=${crontab_int[$version]-${crontab_int[default]}}
-	url="https://download.nextcloud.com/server/releases/nextcloud-$fullversion.tar.bz2"
-	ascUrl="https://download.nextcloud.com/server/releases/nextcloud-$fullversion.tar.bz2.asc"
+	url="https://github.com/nextcloud-releases/server/releases/download/v$fullversion/nextcloud-$fullversion.tar.bz2"
+	ascUrl="https://github.com/nextcloud-releases/server/releases/download/v$fullversion/nextcloud-$fullversion.tar.bz2.asc"
 
 	# Create the version+variant directory with a Dockerfile.
 	mkdir -p "$dir"
